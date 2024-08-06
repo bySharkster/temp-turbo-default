@@ -29,8 +29,8 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/bySharkster/digital-sunsets.git
+    cd digital-sunsets
     ```
 
 2. **Install dependencies**:
@@ -40,11 +40,11 @@ To set up the project locally, follow these steps:
 
 ## Development
 
-To start the development server for the Next.js application:
+To start the development server for the Digital Sunsets App:
 
-1. **Navigate to the Next.js app directory**:
+1. **Navigate to the Digital Sunsets App app directory**:
     ```sh
-    cd apps/next-app
+    cd apps/web-app
     ```
 
 2. **Start the development server**:
@@ -56,11 +56,11 @@ To start the development server for the Next.js application:
 
 ## Build
 
-To build the Next.js application for production:
+To build the Digital Sunsets application for production:
 
-1. **Navigate to the Next.js app directory**:
+1. **Navigate to the Digital Sunsets App directory**:
     ```sh
-    cd apps/next-app
+    cd apps/web-app
     ```
 
 2. **Run the build command**:
@@ -74,7 +74,7 @@ To run linting checks across the entire monorepo:
 
 1. **Navigate to the root directory**:
     ```sh
-    cd your-repo-name
+    cd digital-sunsets
     ```
 
 2. **Run the lint command**:
@@ -84,11 +84,11 @@ To run linting checks across the entire monorepo:
 
 ## Testing
 
-To run tests for the Next.js application:
+To run tests for the Digital Sunsets application:
 
-1. **Navigate to the Next.js app directory**:
+1. **Navigate to the Digital Sunsets app directory**:
     ```sh
-    cd apps/next-app
+    cd apps/web-app
     ```
 
 2. **Run the test command**:
@@ -99,9 +99,9 @@ To run tests for the Next.js application:
 ## Directory Structure
 
 The repository is structured as follows:
-your-repo-name/
+digital-sunsets/
 ├── apps/
-│ └── next-app/ # Next.js application
+│ └── web-app/ # Digital Sunsets application
 │ ├── public/
 │ ├── src/
 │ ├── pages/
