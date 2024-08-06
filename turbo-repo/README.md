@@ -1,81 +1,130 @@
-# Turborepo starter
+# Digital-Sunsets
+This will be the repository for the entire Digital Sunsets App
 
-This is an official starter Turborepo.
+This repository is a monorepo managed by [Digital Sunsets](https://digital-sunsets.com/) and contains a Next.js application written in TypeScript.
 
-## Using this example
+## Table of Contents
 
-Run the following command:
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Development](#development)
+- [Build](#build)
+- [Linting](#linting)
+- [Testing](#testing)
+- [Directory Structure](#directory-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-```sh
-npx create-turbo@latest
-```
+## Prerequisites
 
-## What's inside?
+Before you begin, ensure you have met the following requirements:
 
-This Turborepo includes the following packages/apps:
+- **Node.js**: v14.x or later
+- **Yarn**: v1.22.x or later (preferred over npm for Turborepo)
+- **Git**: v2.20.x or later
 
-### Apps and Packages
+## Installation
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+To set up the project locally, follow these steps:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/bySharkster/digital-sunsets.git
+    cd digital-sunsets
+    ```
 
-### Utilities
+2. **Install dependencies**:
+    ```sh
+    yarn install
+    ```
 
-This Turborepo has some additional tools already setup for you:
+## Development
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+To start the development server for the Digital Sunsets App:
 
-### Build
+1. **Navigate to the Digital Sunsets App app directory**:
+    ```sh
+    cd apps/web-app
+    ```
 
-To build all apps and packages, run the following command:
+2. **Start the development server**:
+    ```sh
+    yarn dev
+    ```
 
-```
-cd my-turborepo
-pnpm build
-```
+3. Open your browser and navigate to `http://localhost:3000`.
 
-### Develop
+## Build
 
-To develop all apps and packages, run the following command:
+To build the Digital Sunsets application for production:
 
-```
-cd my-turborepo
-pnpm dev
-```
+1. **Navigate to the Digital Sunsets App directory**:
+    ```sh
+    cd apps/web-app
+    ```
 
-### Remote Caching
+2. **Run the build command**:
+    ```sh
+    yarn build
+    ```
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+## Linting
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+To run linting checks across the entire monorepo:
 
-```
-cd my-turborepo
-npx turbo login
-```
+1. **Navigate to the root directory**:
+    ```sh
+    cd digital-sunsets
+    ```
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+2. **Run the lint command**:
+    ```sh
+    yarn lint
+    ```
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+## Testing
 
-```
-npx turbo link
-```
+To run tests for the Digital Sunsets application:
 
-## Useful Links
+1. **Navigate to the Digital Sunsets app directory**:
+    ```sh
+    cd apps/web-app
+    ```
 
-Learn more about the power of Turborepo:
+2. **Run the test command**:
+    ```sh
+    yarn test
+    ```
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## Directory Structure
+
+The repository is structured as follows:
+digital-sunsets/
+├── apps/
+│ └── web-app/ # Digital Sunsets application
+│ ├── public/
+│ ├── src/
+│ ├── pages/
+│ ├── styles/
+│ ├── tsconfig.json
+│ ├── next.config.js
+│ └── package.json
+├── packages/ # Shared packages (if any)
+├── .gitignore
+├── package.json
+├── turbo.json # Turborepo configuration
+└── yarn.lock
+
+## Contributing
+
+Contributions are always welcome! Please follow these steps to contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch** (`git checkout -b feature/your-feature-name`).
+3. **Commit your changes** (`git commit -m 'Add some feature'`).
+4. **Push to the branch** (`git push origin feature/your-feature-name`).
+5. **Open a Pull Request**.
+
+## License
+
+This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for details.
